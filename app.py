@@ -1,7 +1,11 @@
 from flask import Flask, render_template
+from flask_cors import CORS  # Import CORS
 import os
 
 app = Flask(__name__)
+
+# Enable CORS for all routes
+CORS(app)
 
 @app.route('/')
 def index():

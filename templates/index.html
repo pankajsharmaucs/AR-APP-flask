@@ -12,14 +12,14 @@
 </head>
 <body style="overflow: hidden;">
     <a-scene embedded arjs='sourceType: webcam;'>
-        <!-- Adjusting the camera settings -->
-        <a-camera-static position="0 0 0" fov="70"></a-camera-static>
+        <!-- Adjusting the camera settings for a normal view -->
+        <a-camera-static position="0 1.6 0" fov="75"></a-camera-static>
 
         <!-- Center the GLTF model and set a smaller scale -->
         <a-entity gltf-model="static/models/scene.gltf" 
-                  position="0 0 -1" scale="0.5 0.5 0.5"></a-entity>
+                  position="0 0 -2" scale="0.5 0.5 0.5"></a-entity>
         
-        <!-- Commented out the blue box -->
+        <!-- Optional: add a simple box for reference -->
         <!-- <a-box position='0 0.5 0' material='color: blue;'></a-box> -->
     </a-scene>
 </body>

@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ar-web-app
+    name: ar-app-flask
     env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python app.py"
